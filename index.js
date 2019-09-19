@@ -15,7 +15,7 @@ function summonCaptainPlanet(planeteerCalls){
    var newCalls = [];
    
    for (var i = 0; i < planeteerCalls.length; i++){
-     var calls = planeteerCalls[i] + '!';
+     var calls = planeteerCalls[i] + '!'; 
      var cappedCalls = calls.toUpperCase();
      newCalls.push(cappedCalls);
    }
@@ -34,7 +34,7 @@ function summonCaptainPlanet(planeteerCalls){
     return false;
   }
 
-function findTheCheese (foods) {
+function findTheCheese(foods) {
    for (var i = 0; i < foods.length; i++) {
       if (foods[i] === "gouda" || foods[i] === "cheddar" || foods[i] === "camembert") {
         return foods[i];
@@ -42,3 +42,16 @@ function findTheCheese (foods) {
    }
     return "no cheese!"
 }  
+
+
+function wordsWithB(words) { // [ "car", "apple", "bear", "bob"]
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].charAt(0) === "b") {
+      var wordsWithB = [];
+      wordsWithB.push(words[i]);
+      return wordsWithB;
+    }
+  }
+  
+  
+}
